@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noah — AI Assistant</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="module" src="/js/app.js"></script>
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div class="logo">N</div>
+      <div>
+        <h1>Noah</h1>
+        <p class="status"><span class="status-dot"></span> Assistant is online</p>
+      </div>
+    </header>
+
+    <section id="messages" class="messages" aria-live="polite">
+      <div class="message assistant">
+        Hello! I'm Noah. How can I help you?
+      </div>
+    </section>
+
+    <form id="chat-form" class="chat-form">
+      <input
+        id="message-input"
+        type="text"
+        placeholder="Message Noah..."
+        autocomplete="off"
+        required
+      >
+      <button id="send-button" type="submit">Send</button>
+    </form>
+    <p id="error-message" class="error" role="alert"></p>
+  </main>
+</body>
+</html>
